@@ -15,27 +15,28 @@ body
 
 #header
 {
-  height:175px;
-  text-align:center;
-  color:white;
-  background:#499bd7;
-  line-height:175px;
+	height:175px;
+	text-align:center;
+	color:white;
+	background:#499bd7;
+	line-height:175px;
 }
+
 #menubar
 {
-  height:60px;
-  line-height:60px;
-  color:black;
-  background:#d6d6d6;
+	height:60px;
+	line-height:60px;
+	color:black;
+	background:#d6d6d6;
 }
 
 ul li
 {
-  display:inline;
+	display:inline;
 }
 a
 {
-  padding:0px 5px;
+	padding:0px 5px;
 }
 
 #content
@@ -50,16 +51,16 @@ img
 }
 #footer
 {
-  font-size:12px;
-  line-height:65px;
-  height:65px;
-  background:#eeeeee;
+	font-size:12px;
+	line-height:65px;
+	height:65px;
+	background:#eeeeee;
 }
 .navigations
 {
-  float:left;
+	float:left;
 }
 #copyrightText
 {
-  float:right;
+	float:right;
 }
