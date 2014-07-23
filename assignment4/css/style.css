@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body
+{
+	background-image:url("../images/pattern.jpg");
+	background-repeat:repeat;
+	color:white;
+} 
+
+#wrapper
+{
+    width:940px;
+    margin:0px auto;
+}
+
+#header
+{
+    background: #444444;
+    height: 50px;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.logo
+{
+    padding-top:9px;
+    float:left;
+    padding-right:26px;
+}
+
+.menuText
+{	
+	font-size:18px;
+}
+
+.menu
+{
+	display:inline;
+	padding-left:26px;
+}
+
+h1
+{
+	font-size:48px;
+	font-weight:bold;
+}
+h2
+{
+	font-size:36px;
+	font:normal;
+	padding-bottom:40px;
+}
+
+#content
+{
+	padding:188px 0px 120px 0px;
+	float:left;
+}
+
+#container
+{
+	padding:0px 20px;
+}
+
+h1
+{
+	margin-bottom:18px;
+}
+
+button
+{
+	font-weight:bold;
+	font-size:20px;
+	border:none;
+	border-radius:5px;
+	height:50px;
+	width:170px;
+	margin-right:20px;
+}
+
+#viewButton
+{
+	background:#f2f2f2;
+}
+#joinButton
+{
+	color:white;
+	background:#ff9900;
+}
+#imageContainer
+{
+	padding:48px 8px 20px 0px;
+}
+.images
+{
+	float:right;
+	margin-left:8px;
+}
+
+#painting1
+{
+	border:5px #434343 solid;
+	box-shadow:0px 0px 5px #434343;
+	margin-top:42px;
+}
+
+#painting2
+{
+	border:7px #8b5500 solid;
+	box-shadow:0px 0px 3px #8b5500;
+}
+#painting3
+{
+	border:6px #414141 solid;
+	box-shadow:0px 0px 3px #414141;
+}
+
+#tableImage
+{
+	margin-bottom:
+}
