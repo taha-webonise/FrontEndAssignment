@@ -17,6 +17,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	list-style:none;
+	text-decoration:none;
+	color:white;	
 }
 @font-face 
 {
@@ -31,8 +34,6 @@ time, mark, audio, video {
 }
 body
 {
-	background-image:url("../images/pattern.jpg");
-	background-repeat:repeat;
 	color:white;
 	font-family: 'Source Sans Pro', 'sans-serif';
 	font-size:18px;
@@ -49,7 +50,10 @@ body
     background: #444444;
     height: 50px;
 }
-
+#headerMenu
+{
+	line-height:20px;
+}
 .clear
 {
 	clear:both;
@@ -58,16 +62,6 @@ body
 .logo
 {
     margin:9px 50px 0px 0px;
-}
-ul
-{
-	list-style:none;
-}
-a
-{
-	display:block;
-	text-decoration:none;
-	color:white;
 }
 .link
 {
@@ -95,16 +89,15 @@ h2
 	margin-bottom:40px;
 }
 
-#content
+#banner
 {
-	float:left;
+	background-image:url("../images/pattern.jpg");
+	background-repeat:repeat;
 }
-
-#container
+.content
 {
-	padding:0px 20px;
+	padding-left:20px;
 }
-
 button
 {
 	font-weight:bold;
@@ -172,32 +165,61 @@ button
 	border:1px;
 	background:#efefef;
 	border-radius:70px;
-	margin-right:75px;
+	margin:0px auto 25px;
+	background-repeat:no-repeat;
+	background-position:center center;
 }
 
 .firstDownMenu
 {
 	margin-left:80px;
 }
-
-.downMenuLogo
+.lastDownMenu
 {
-	margin:46px auto 70px;
+	margin-right:80px;
+}
+.listWidth
+{
+	width:180px;
+	margin-left:35px; 
+}
+.downMenuText
+{
+	color:#888888;		
+}
+#addArtLogo
+{
+	background-image:url("../images/addArtLogo.png");
+}
+#orderArtLogo
+{
+	background-image:url("../images/orderArtLogo.png");
+}
+#buyArtLogo
+{
+	background-image:url("../images/buyArtLogo.png");
+}
+#returnArtLogo
+{
+	background-image:url("../images/returnArtLogo.png");
+}
+a
+{
+	display:block;
 }
 
-p
-{
-	color:#888888;
-}
 #footer
 {
 	background:#ececec;
 }
 .bottomLink
 {
-	margin-right:20px;
+	margin:30px 17px 0px 3px;
+	font-size:16px;
 }
 .footerMenu
 {
 	color:#ff8000;
 }
+
+
