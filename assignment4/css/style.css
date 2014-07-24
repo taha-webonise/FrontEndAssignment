@@ -35,7 +35,7 @@ time, mark, audio, video {
 body
 {
 	color:white;
-	font-family: 'Source Sans Pro', sans-serif, Arial, Helvetica;
+	font-family: 'Source Sans Pro', Arial, Helvetica;
 	font-size:18px;
 }
 a
@@ -76,6 +76,7 @@ a
 }
 .link
 {
+	color:#aaaaaa;
 	border-right:1px solid #333333;
 	padding:15px 25px;
 }
@@ -106,7 +107,6 @@ h2
 }
 .buttons
 {
-	font-weight:bold;
 	font-size:20px;
 	border:none;
 	border-radius:3px;
@@ -186,12 +186,12 @@ h2
 }
 .lastDownMenu
 {
-	margin-right:80px;
+	margin-right:40px;
 }
 .listWidth
 {
 	width:180px;
-	margin-left:35px; 
+	margin-left:45px; 
 }
 .downMenuText
 {
@@ -239,7 +239,6 @@ h2
 	background-repeat:no-repeat;
 	background-position:center;	
 }
-
 #googlelogo
 {
 	background-image:url("../images/g+Logo.png");
@@ -260,6 +259,9 @@ h2
 {
 	color:#aaaaaa;
 	font-size:14px;
+}
+div.footerText
+{
 	margin:20px 50px 80px 0px;
 }
 .footerText a
@@ -268,14 +270,10 @@ h2
 }
 li.footerText
 {
-	margin-left:5px;
-	margin-right:5px;
+	margin:20px 0px;
+	padding: 0px 10px;
 }
 .footerTermsOfService
 {
-	border-left:1px solid #aaaaaa;
 	border-right:1px solid #aaaaaa;
-	padding:0px 10px;
-	margin-left:0px;
-	margin-right:0px;
 }
