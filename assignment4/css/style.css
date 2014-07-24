@@ -18,15 +18,27 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+@font-face 
+{
+        font-family: "Source Sans Pro";
+        src: url('../fonts/888244629-SourceSansPro-Regular.eot');
+        src: url('../fonts/888244629-SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/888244629-SourceSansPro-Regular.svg#Source Sans Pro') format('svg'),
+        url('../fonts/888244629-SourceSansPro-Regular.woff') format('woff'),
+        url('../fonts/888244629-SourceSansPro-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
 body
 {
 	background-image:url("../images/pattern.jpg");
 	background-repeat:repeat;
 	color:white;
+	font-family: 'Source Sans Pro', 'sans-serif';
+	font-size:18px;
 } 
 
-#wrapper
+.wrapper
 {
     width:940px;
     margin:0px auto;
@@ -45,37 +57,46 @@ body
 
 .logo
 {
-    padding-top:9px;
-    float:left;
-    padding-right:26px;
+    margin:9px 50px 0px 0px;
 }
-
-.menuText
-{	
-	font-size:18px;
-}
-
-.menu
+ul
 {
-	display:inline;
-	padding-left:26px;
+	list-style:none;
 }
-
+a
+{
+	display:block;
+	text-decoration:none;
+	color:white;
+}
+.link
+{
+	border-right:1px solid #333333;
+	padding:15px 25px;
+}
+.firstUpMenu
+{
+	border-left:1px solid #333333;
+}
+.floatLeft
+{
+	float:left;
+}
 h1
 {
 	font-size:48px;
 	font-weight:bold;
+	margin:188px 0px 18px 0px;
 }
 h2
 {
 	font-size:36px;
 	font:normal;
-	padding-bottom:40px;
+	margin-bottom:40px;
 }
 
 #content
 {
-	padding:188px 0px 120px 0px;
 	float:left;
 }
 
@@ -84,20 +105,15 @@ h2
 	padding:0px 20px;
 }
 
-h1
-{
-	margin-bottom:18px;
-}
-
 button
 {
 	font-weight:bold;
 	font-size:20px;
 	border:none;
-	border-radius:5px;
+	border-radius:3px;
 	height:50px;
 	width:170px;
-	margin-right:20px;
+	margin:0px 20px 120px 0px;
 }
 
 #viewButton
@@ -137,7 +153,51 @@ button
 	box-shadow:0px 0px 3px #414141;
 }
 
-#tableImage
+#howItWorksContainer
 {
-	margin-bottom:
+	text-align:center;
+	background:white;
+	padding-bottom:120px;
+}
+#howItWorksContainer h2
+{
+	padding:64px 0px 75px 0px;
+	color:#444444;
+	font-weight:bold;
+}
+.circleMenu
+{
+	height:140px;
+	width:140px;
+	border:1px;
+	background:#efefef;
+	border-radius:70px;
+	margin-right:75px;
+}
+
+.firstDownMenu
+{
+	margin-left:80px;
+}
+
+.downMenuLogo
+{
+	margin:46px auto 70px;
+}
+
+p
+{
+	color:#888888;
+}
+#footer
+{
+	background:#ececec;
+}
+.bottomLink
+{
+	margin-right:20px;
+}
+.footerMenu
+{
+	color:#ff8000;
 }
