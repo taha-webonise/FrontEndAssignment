@@ -187,7 +187,7 @@ b
 	background-position:center;
 	width:1200px;
 	height:610px;
-	margin:0px auto;
+	margin:0px auto 80px;
 }
 .content
 {
@@ -229,4 +229,39 @@ b
 {
 	margin-right:0;
 }
-
+.contentList li a
+{
+	margin:0px auto;
+}
+.createCourse
+{
+	background-image:url("../images/createCourseLogo.png");
+}
+.createAssessment
+{
+	background-image:url("../images/createAssessmentLogo.png");
+}
+.trackScore
+{
+	background-image:url("../images/trackScoresLogo.png");
+}
+.groupDiscussion
+{
+	background-image:url("../images/groupDiscussionLogo.png");
+}
+.report
+{
+	background-image:url("../images/reportsLogo.png");
+}
+.multimediaSupport
+{
+	background-image:url("../images/multimediaSupportLogo.png");
+}
+.aptitudeTest
+{
+	background-image:url("../images/aptitudeTestLogo.png");
+}
+.certification
+{
+	background-image:url("../images/certificationLogo.png");
+}
