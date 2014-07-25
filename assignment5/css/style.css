@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color:black;	
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('opensans/opensans-semibold-webfont.eot');
+    src: url('opensans/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans/opensans-semibold-webfont.woff') format('woff'),
+         url('opensans/opensans-semibold-webfont.ttf') format('truetype'),
+         url('opensans/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('opensans/opensans-light-webfont.eot');
+    src: url('opensans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans/opensans-light-webfont.woff') format('woff'),
+         url('opensans/opensans-light-webfont.ttf') format('truetype'),
+         url('opensans/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('opensans/opensans-bold-webfont.eot');
+    src: url('opensans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans/opensans-bold-webfont.woff') format('woff'),
+         url('opensans/opensans-bold-webfont.ttf') format('truetype'),
+         url('opensans/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titilliumregular';
+    src: url('titillium/titillium-regular-webfont.eot');
+    src: url('titillium/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('titillium/titillium-regular-webfont.woff') format('woff'),
+         url('titillium/titillium-regular-webfont.ttf') format('truetype'),
+         url('titillium/titillium-regular-webfont.svg#titilliumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'titilliumbold';
+    src: url('titillium/titillium-semibold-webfont.eot');
+    src: url('titillium/titillium-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('titillium/titillium-semibold-webfont.woff') format('woff'),
+         url('titillium/titillium-semibold-webfont.ttf') format('truetype'),
+         url('titillium/titillium-semibold-webfont.svg#titilliumbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'titilliumlight';
+    src: url('titillium/titillium-light-webfont.eot');
+    src: url('titillium/titillium-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('titillium/titillium-light-webfont.woff') format('woff'),
+         url('titillium/titillium-light-webfont.ttf') format('truetype'),
+         url('titillium/titillium-light-webfont.svg#titilliumlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a
+{
+	display:block;
+	text-decoration:none;
+}
+ol, ul
+{
+	list-style:none;
+}
+h1
+{
+	font-size:40px;
+	line-height:54px;
+	font-family:open_sanslight;
+}
+h2
+{
+	font-size:36px;
+	font-family:open_sanslight;
+	color:#444444;
+}
+
+h4
+{
+	font-size:14px;
+}
+h5
+{
+	font-size:11px;
+}
+b
+{
+	font-family:open_sansbold;
+}
+.buttonText
+{
+	border-radius:3px;
+	background-color:#ff8a00;
+	font-size:30px;
+	padding:0px 18px;
+	font-family:open_sansbold;
+	line-height:55px;
+	color:white;
+}
+.floatLeft, .contentList li
+{
+	float:left;
+}
+.floatRight
+{
+	float:right;
+}
+.clear
+{
+	clear:both;
+}
+.container
+{
+	width:940px;
+	margin:0px auto;
+}
+
+.header .logo
+{
+	background-image:url('../images/LMSLogo.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	height:23px;
+	width:60px;
+	margin:13px;
+	border:none;
+}
+.header a
+{
+	font-family:open_sanssemibold;
+	font-size:14px;
+	color:#ff8a00;
+	border:2px solid #ff8a00;
+	border-radius:4px;
+	line-height:18px;
+}
+
+.login
+{
+	padding: 4px 10px;
+	line-height:20px;
+	margin:10px 0px;	
+}
+.headerList li a
+{
+	font-size:16px;
+	color:#666666;
+	border:none;
+	padding:0;
+	margin:16px 35px 16px 0px;
+}
+.banner
+{
+	background-image:url('../images/bannerImage.jpg');
+	background-repeat:no-repeat;
+	background-position:center;
+	width:1200px;
+	height:610px;
+	margin:0px auto;
+}
+.content
+{
+	width:385px;
+	margin-top:50px;
+}
+.content h1
+{
+	font-family:open_sanslight;
+}
+.content a
+{
+	margin-top:20px;
+}
+
+.bottomContent
+{
+	background:#f0f0f0;
+}
+.circles
+{
+	height:44px;
+	width:44px;
+	background:#ff8a00;
+	border-radius:22px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.contentList li
+{
+	width:217px;
+	margin:20px 20px 0px 0px;
+	background:white;
+	border:1px solid #e4e4e4;
+	border-radius:3px;
+}
+.contentList li.noMargin
+{
+	margin-right:0;
+}
+
