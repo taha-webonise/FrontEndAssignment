@@ -41,14 +41,11 @@ img, ol, ul, li, table
 }
 @font-face {
     font-family: 'titilliumregular';
-    src: url('titillium/titillium-regular-webfont.eot');
-    src: url('titillium/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('titillium/titillium-regular-webfont.woff') format('woff'),
-         url('titillium/titillium-regular-webfont.ttf') format('truetype'),
-         url('titillium/titillium-regular-webfont.svg#titilliumregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    src: url('titiliumwebregular/titilliumweb-regular.eot');
+    src: url('titiliumwebregular/titilliumweb-regular.eot') format('embedded-opentype'),
+         url('titiliumwebregular/titilliumweb-regular.woff') format('woff'),
+         url('titiliumwebregular/titilliumweb-regular.ttf') format('truetype'),
+         url('titiliumwebregular/titilliumweb-regular.svg#TitilliumWebRegular') format('svg');
 }
 @font-face {
     font-family: 'titilliumbold';
@@ -63,14 +60,11 @@ img, ol, ul, li, table
 }
 @font-face {
     font-family: 'titillium_bdbold';
-    src: url('titillium/titillium-bold-webfont.eot');
-    src: url('titillium/titillium-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('titillium/titillium-bold-webfont.woff') format('woff'),
-         url('titillium/titillium-bold-webfont.ttf') format('truetype'),
-         url('titillium/titillium-bold-webfont.svg#titillium_bdbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    src: url('titiliumwebbold/titilliumweb-bold.eot');
+    src: url('titiliumwebbold/titilliumweb-bold.eot') format('embedded-opentype'),
+         url('titiliumwebbold/titilliumweb-bold.woff') format('woff'),
+         url('titiliumwebbold/titilliumweb-bold.ttf') format('truetype'),
+         url('titiliumwebbold/titilliumweb-bold.svg#TitilliumWebBold') format('svg');
 }
 @font-face {
     font-family: 'titilliumlight';
@@ -110,11 +104,16 @@ h2
 .clear
 {
 	clear:both;
+	float:none;
 }
 .container
 {
 	width:940px;
 	margin:0px auto;
+}
+.header
+{
+	padding:10px 0;
 }
 .logo
 {
@@ -122,7 +121,7 @@ h2
 	background: url('../images/LMSLogo.png') no-repeat center;
 	height:23px;
 	width:60px;
-	margin:13px 0px;
+	padding:3px 0;
 }
 .login
 {
@@ -134,13 +133,12 @@ h2
 	border-radius:4px;
 	line-height:18px;
 	padding:4px 10px;
-	margin:10px 0px;
 }
 
 .headerList
 {
 	float:right;
-	margin:14px 0px;
+	margin:4px 0px;
 }
 
 .headerList li
@@ -159,16 +157,17 @@ h2
 {
 	background: url('../images/bannerImage.jpg') no-repeat;
 	background-size: cover;
+	height: 610px;
+	padding-top: 43px;
 }
 .content
 {
-	display:inline-block;
+	display:block;
 }
 .banner .container .content
 {
 	float:right;
 	width:395px;
-	margin: 43px 0px 317px;
 }
 .banner .container .content h1
 {
@@ -188,9 +187,9 @@ h2
 	padding:0px 25px;
 	display:inline-block;
 }
-.bottomContent .container .content
+.bottomContent .container
 {
-	margin:76px 0px 20px;
+	padding:76px 0px 20px;
 }
 .bottomContent
 {
@@ -204,13 +203,15 @@ h2
 }
 .contentList li
 {
-	float:left;
-	width:217px;
-	background:white;
-	border:1px solid #e4e4e4;
-	border-radius:3px;
+	float: left;
+	width: 180px;
+	background: white;
+	border: 1px solid #e4e4e4;
+	border-radius: 3px;
 	position: relative;
-	margin:0 20px 50px 0;
+	margin: 0 20px 50px 0;
+	padding: 35px 18px 20px;
+
 }
 .contentList li.noMargin
 {
@@ -221,6 +222,8 @@ h2
 	clear:both;
 	float:none;
 	border: 0;
+	margin: 0;
+	padding: 0;
 }
 .contentList li a
 {
@@ -239,15 +242,14 @@ h2
 	font-family: Arial;
 	font-size:14px;
 	line-height: 18px;
-	margin: 34px auto 12px;
 	font-weight:bold;
 	text-align:center;
+	margin-bottom: 12px;
 }
 .contentList li p
 {
 	font-family: Arial;
 	font-size:11px;
-	margin: 0 18px 20px;
 	text-align: left;
 	word-break: break-all;
 }
@@ -286,10 +288,7 @@ h2
 .footer
 {
 	background:#555555;
-}
-.footer .content
-{
-	margin: 20px 0px 200px;
+	padding:20px 0 200px;
 }
 .footer .container h2
 {
@@ -306,9 +305,9 @@ h2
 	float:right;
 	margin-bottom:20px;
 }
-.footer .content div.clear
+.topContent 
 {
-	border:1px solid #4c4c4c;
+	border-bottom:1px solid #4c4c4c;
 	margin-bottom:26px;
 }
 .footerList
@@ -376,7 +375,7 @@ h2
 	clear:both;
 	float:none;
 }
-.footer h4
+.footer span
 {
 	float:left;
 	margin-right:20px;
