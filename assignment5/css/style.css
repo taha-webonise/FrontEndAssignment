@@ -291,17 +291,16 @@ h2
 	color: white;
 	float:left;
 	letter-spacing:-1px;
-	margin: 0px 36px 35px 0px;
 }
 .footer .container .buttonText
 {
 	font-family:titillium_bdbold;
 	float:right;
-	margin-bottom:20px;
 }
 .topContent 
 {
 	border-bottom:1px solid #4c4c4c;
+	padding-bottom:20px;
 	margin-bottom:26px;
 }
 .footerList
@@ -393,6 +392,7 @@ h2
 	font-family: titilliumregular;
 	font-size: 14px;
 	line-height: 16px;
+	width: 400px;
 }
 .footer .content .footerContent div
 {
