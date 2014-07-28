@@ -1,23 +1,11 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, h1, h2,
+h3, h4, h5, h6, p, a, 
+img, ol, ul, li, table
+{
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	color:black;	
+	color:black;
+	font-weight:normal;
 }
 @font-face {
     font-family: 'open_sanssemibold';
@@ -74,6 +62,17 @@ time, mark, audio, video {
 
 }
 @font-face {
+    font-family: 'titillium_bdbold';
+    src: url('titillium/titillium-bold-webfont.eot');
+    src: url('titillium/titillium-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('titillium/titillium-bold-webfont.woff') format('woff'),
+         url('titillium/titillium-bold-webfont.ttf') format('truetype'),
+         url('titillium/titillium-bold-webfont.svg#titillium_bdbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
     font-family: 'titilliumlight';
     src: url('titillium/titillium-light-webfont.eot');
     src: url('titillium/titillium-light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -84,57 +83,29 @@ time, mark, audio, video {
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('ubuntu/ubuntulight/ubuntu-l-webfont.eot');
+    src: url('ubuntu/ubuntulight/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ubuntu/ubuntulight/ubuntu-l-webfont.woff') format('woff'),
+         url('ubuntu/ubuntulight/ubuntu-l-webfont.ttf') format('truetype'),
+         url('ubuntu/ubuntulight/ubuntu-l-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 a
 {
-	display:block;
 	text-decoration:none;
 }
 ol, ul
 {
 	list-style:none;
 }
-h1
-{
-	font-size:40px;
-	line-height:54px;
-	font-family:open_sanslight;
-}
 h2
 {
-	font-size:36px;
-	font-family:open_sanslight;
-	color:#444444;
-}
-
-h4
-{
-	font-size:14px;
-}
-h5
-{
-	font-size:11px;
-}
-b
-{
-	font-family:open_sansbold;
-}
-.buttonText
-{
-	border-radius:3px;
-	background-color:#ff8a00;
 	font-size:30px;
-	padding:0px 18px;
-	font-family:open_sansbold;
-	line-height:55px;
-	color:white;
-}
-.floatLeft, .contentList li
-{
-	float:left;
-}
-.floatRight
-{
-	float:right;
 }
 .clear
 {
@@ -145,123 +116,291 @@ b
 	width:940px;
 	margin:0px auto;
 }
-
-.header .logo
+.logo
 {
-	background-image:url('../images/LMSLogo.png');
-	background-repeat:no-repeat;
-	background-position:center;
+	float:left;
+	background: url('../images/LMSLogo.png') no-repeat center;
 	height:23px;
 	width:60px;
-	margin:13px;
-	border:none;
+	margin:13px 0px;
 }
-.header a
-{
-	font-family:open_sanssemibold;
-	font-size:14px;
-	color:#ff8a00;
-	border:2px solid #ff8a00;
-	border-radius:4px;
-	line-height:18px;
-}
-
 .login
 {
-	padding: 4px 10px;
-	line-height:20px;
-	margin:10px 0px;	
+	font-family:open_sanssemibold;
+	float:right;
+	font-size:14px;
+	color:#ff8a00;
+	border:2px solid;
+	border-radius:4px;
+	line-height:18px;
+	padding:4px 10px;
+	margin:10px 0px;
 }
+
+.headerList
+{
+	float:right;
+	margin:14px 0px;
+}
+
+.headerList li
+{
+	float:left;
+	margin-right:35px;
+}
+
 .headerList li a
 {
 	font-size:16px;
+	font-family:open_sanssemibold;
 	color:#666666;
-	border:none;
-	padding:0;
-	margin:16px 35px 16px 0px;
 }
 .banner
 {
-	background-image:url('../images/bannerImage.jpg');
-	background-repeat:no-repeat;
-	background-position:center;
-	width:1200px;
-	height:610px;
-	margin:0px auto 80px;
+	background: url('../images/bannerImage.jpg') no-repeat;
+	background-size: cover;
 }
 .content
 {
-	width:385px;
-	margin-top:50px;
+	display:inline-block;
 }
-.content h1
+.banner .container .content
+{
+	float:right;
+	width:395px;
+	margin: 43px 0px 317px;
+}
+.banner .container .content h1
 {
 	font-family:open_sanslight;
+	font-size:40px;
+	line-height:54px;
+	margin-bottom:34px;
 }
-.content a
+.buttonText
 {
-	margin-top:20px;
+	color:white;
+	font-family:open_sansbold;
+	font-size:30px;
+	line-height:55px;
+	border-radius:3px;
+	background:#ff8a00;
+	padding:0px 25px;
+	display:inline-block;
 }
-
+.bottomContent .container .content
+{
+	margin:76px 0px 20px;
+}
 .bottomContent
 {
 	background:#f0f0f0;
 }
-.circles
+.bottomContent h2
 {
-	height:44px;
-	width:44px;
-	background:#ff8a00;
-	border-radius:22px;
-	background-repeat:no-repeat;
-	background-position:center;
+	text-align:center;
+	margin-bottom:57px;
+	font-family: ubuntulight;
 }
-
 .contentList li
 {
+	float:left;
 	width:217px;
-	margin:20px 20px 0px 0px;
 	background:white;
 	border:1px solid #e4e4e4;
 	border-radius:3px;
+	position: relative;
+	margin:0 20px 50px 0;
 }
 .contentList li.noMargin
 {
 	margin-right:0;
 }
+.contentList li.clear
+{
+	clear:both;
+	float:none;
+	border: 0;
+}
 .contentList li a
 {
-	margin:0px auto;
+	display: inline-block;
+	height:44px;
+	width:44px;
+	background-color: #ff8a00;
+	border-radius:22px;
+	position: absolute;
+	top: -22px;
+	left: 50%;
+	margin-left: -22px;
+}
+.contentList li h3
+{
+	font-family: Arial;
+	font-size:14px;
+	line-height: 18px;
+	margin: 34px auto 12px;
+	font-weight:bold;
+	text-align:center;
+}
+.contentList li p
+{
+	font-family: Arial;
+	font-size:11px;
+	margin: 0 18px 20px;
+	text-align: left;
+	word-break: break-all;
 }
 .createCourse
 {
-	background-image:url("../images/createCourseLogo.png");
+	background:url("../images/createCourseLogo.png") no-repeat center;
 }
 .createAssessment
 {
-	background-image:url("../images/createAssessmentLogo.png");
+	background:url("../images/createAssessmentLogo.png") no-repeat center;
 }
 .trackScore
 {
-	background-image:url("../images/trackScoresLogo.png");
+	background:url("../images/trackScoresLogo.png") no-repeat center;
 }
 .groupDiscussion
 {
-	background-image:url("../images/groupDiscussionLogo.png");
+	background:url("../images/groupDiscussionLogo.png") no-repeat center;
 }
 .report
 {
-	background-image:url("../images/reportsLogo.png");
+	background:url("../images/reportsLogo.png") no-repeat center;
 }
 .multimediaSupport
 {
-	background-image:url("../images/multimediaSupportLogo.png");
+	background:url("../images/multimediaSupportLogo.png") no-repeat center;
 }
 .aptitudeTest
 {
-	background-image:url("../images/aptitudeTestLogo.png");
+	background:url("../images/aptitudeTestLogo.png") no-repeat center;
 }
 .certification
 {
-	background-image:url("../images/certificationLogo.png");
+	background:url("../images/certificationLogo.png") no-repeat center;
+}
+.footer
+{
+	background:#555555;
+}
+.footer .content
+{
+	margin: 20px 0px 200px;
+}
+.footer .container h2
+{
+	line-height:40px;
+	font-family: titilliumregular;
+	color: white;
+	float:left;
+	letter-spacing:-1px;
+	margin:0px 36px 33px 0px;
+}
+.footer .container .buttonText
+{
+	font-family:titillium_bdbold;
+}
+.footer .content div.clear
+{
+	border:1px solid #4c4c4c;
+	margin-bottom:26px;
+}
+.footerList
+{
+	float:left;
+	margin-bottom: 16px;
+}
+.footerList li
+{
+	float:left;
+	margin-right:20px;
+}
+.footerList li a
+{
+	font-family:titillium_bdbold;
+	font-size:18px;
+	color:white;
+	line-height:20px;
+}
+.footerList li.clear
+{
+	clear:both;
+	float:none;
+}
+.socialList
+{
+	float:right;
+	margin-top: 7px;
+}
+.socialList li
+{
+	float:left;
+	margin-right:7px;
+}
+.socialList li.noMargin
+{
+	margin:0;
+}
+.socialList li a
+{
+	display:inline-block;
+	border-radius:15px;
+	background-color:#777777;
+	height:30px;
+	width:30px;
+}
+.fbIcon
+{
+	background:url("../images/fbLogo.png") no-repeat center;
+}
+.twIcon
+{
+	background:url("../images/twLogo.png") no-repeat center;
+}
+.pinIcon
+{
+	background:url("../images/pinLogo.png") no-repeat center;
+}
+.gplusIcon
+{
+	background:url("../images/gplusLogo.png") no-repeat center;
+}
+.socialList li.clear
+{
+	clear:both;
+	float:none;
+}
+.footer h4
+{
+	float:left;
+	margin-right:20px;
+}
+.terms
+{
+	float:left;
+}
+.terms li
+{
+	float:left;
+	margin-right:15px;
+}
+.terms li a
+{
+	color:white;
+}
+.footerContent
+{
+	float:left;
+	font-family: titilliumregular;
+	font-size: 14px;
+	line-height: 16px;
+}
+.footer .content .footerContent div
+{
+	border:none;
+	margin:0;
 }
