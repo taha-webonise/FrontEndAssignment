@@ -160,10 +160,7 @@ h2
 	height: 610px;
 	padding-top: 43px;
 }
-.content
-{
-	display:block;
-}
+
 .banner .container .content
 {
 	float:right;
@@ -187,13 +184,10 @@ h2
 	padding:0px 25px;
 	display:inline-block;
 }
-.bottomContent .container
-{
-	padding:76px 0px 20px;
-}
 .bottomContent
 {
 	background:#f0f0f0;
+	padding: 76px 0px 20px;
 }
 .bottomContent h2
 {
