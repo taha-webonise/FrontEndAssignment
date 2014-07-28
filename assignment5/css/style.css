@@ -298,11 +298,13 @@ h2
 	color: white;
 	float:left;
 	letter-spacing:-1px;
-	margin:0px 36px 33px 0px;
+	margin: 0px 36px 35px 0px;
 }
 .footer .container .buttonText
 {
 	font-family:titillium_bdbold;
+	float:right;
+	margin-bottom:20px;
 }
 .footer .content div.clear
 {
