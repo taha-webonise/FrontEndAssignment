@@ -63,30 +63,31 @@ ol, ul
 	width:940px;
 	margin:0px auto;
 }
-.header
-{
-	padding:5px 0px;
-}
 .logo
 {
 	height:45px;
 	width:120px;
 	background:url("../images/RFCLogo.png") no-repeat center;
 	float:left;
+	margin: 5px 0px;
 }
 .social
 {
 	float:right;
-	margin:8px 0px 8px 37px;
+	margin:13px 0px 0px 42px;
 }
 .social li
 {
 	float:left;
 	margin-left:5px;
 }
+.social li.first
+{
+	margin:0;
+}
 .social li a
 {
-	display: inline-block;
+	display: block;
 	background-color:#42aae4;
 	height:25px;
 	width:25px;
@@ -116,7 +117,7 @@ ol, ul
 .headerList
 {
 	float:right;
-	margin:13px 0px;
+	margin-top:18px;
 }
 .headerList li
 {
@@ -137,8 +138,11 @@ ol, ul
 .banner
 {
 	background:url("../images/banner.jpg") no-repeat center;
-	background-size: cover;
+	background-color:#b8d3f0;
 	height: 545px;
+}
+.banner .container
+{
 	padding-top: 60px;
 }
 .banner .content
@@ -153,7 +157,7 @@ ol, ul
 	color:black;
 	margin-bottom:12px;
 }
-.banner h4
+.banner span
 {
 	font-size:22px;
 	font-family:minionpromedium;
@@ -168,6 +172,10 @@ ol, ul
 {
 	float:left;
 	margin-left: 20px;
+	width: 216px;
+	border:2px solid white;
+	border-radius:5px;
+
 }
 .navList li.first
 {
@@ -183,15 +191,13 @@ ol, ul
 }
 .navList a
 {
-	display: inline-block;
-	border:2px solid white;
-	border-radius:5px;
+	display: block;
 	padding: 14px 13px 14px 19px;
 	font-family:oxygenregular;
 	font-size:22px;
 	line-height:28px;
 	letter-spacing:-0.25px;
-	width: 184px;
+
 }
 .navList li span
 {
@@ -205,9 +211,10 @@ ol, ul
 {
 	padding:60px 0px 70px;
 }
-.feature img
+.imageWrapper
 {
-	display: block;
+	width:300px;
+	height:200px;
 }
 .feature h2
 {
@@ -222,6 +229,7 @@ ol, ul
 {
 	float:left;
 	margin-left:20px;
+	width: 300px;
 }
 .contentList li.first
 {
@@ -259,48 +267,50 @@ ol, ul
 	padding:28px 0px 128px;
 	border-top: 1px solid #dadada;
 }
-.footer h5
+.footerColumn h5
 {
 	font-family:oxygenbold;
 	font-size:14px;
 	color:#b2b2b2;
 	margin:0px 0px 13px 5px;
 }
-.footerList
+.footerColumn
 {
-	padding-bottom:25px;
-	border-bottom:1px solid #535353;
-}
-.footerList li a.bolder
-{
-	font-weight:bolder;
-}
-.footerList ul
-{
+	width: 168px;
 	float:left;
-	margin-right:60px;
+	margin: 0px 20px 22px 0px;
 }
-.footerList li
+.footerColumn ul li a
 {
 	font-family:minionproregular;
 	font-size:14px;
 	line-height: 20px;
 }
-.footerList li.break
+.footerColumn ul.topColumn
 {
 	margin-bottom:20px;
 }
+.footerColumn ul.boldList li a
+{
+	font-weight:bold
+}
 .footerHome
 {
-	margin: 15px 195px 5px;
+	border-top:1px solid #535353;
+	padding-top: 15px;
+	text-align: center;
 }
-.footerHome li
+.footerHome ul
+{
+	display:inline-block;
+}
+.footerHome ul li
 {
 	float:left;
 	padding:0px 8px;
 	border-left:1px solid white;
 }
-.footerHome li a
+.footerHome ul li a
 {
 	font-family:oxygenbold;
 	font-size:12px;
@@ -318,11 +328,11 @@ ol, ul
 	border:none;
 	padding:0;
 }
-.footer span
+.footerHome span
 {
-	margin: 0px 335px;
 	color:#aaaaaa;
 	font-family:minionproregular;
 	font-size:14px;
 	line-height:20px;
+	display:block;
 }
