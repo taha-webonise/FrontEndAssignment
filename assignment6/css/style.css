@@ -133,7 +133,7 @@ ol, ul
 {
 	background:url("../images/banner.jpg") no-repeat center;
 	background-size: cover;
-	height: 600px;
+	height: 545px;
 	padding-top: 60px;
 }
 .banner .content
@@ -261,6 +261,15 @@ ol, ul
 	color:#b2b2b2;
 	margin:0px 0px 13px 5px;
 }
+.footerList
+{
+	padding-bottom:25px;
+	border-bottom:1px solid #535353;
+}
+.footerList li.bolder
+{
+	font-weight:bolder;
+}
 .footerList ul
 {
 	float:left;
@@ -272,14 +281,9 @@ ol, ul
 	font-size:14px;
 	line-height: 20px;
 }
-li.break
+.footerList li.break
 {
 	margin-bottom:20px;
-}
-.footerList
-{
-	padding-bottom:25px;
-	border-bottom:1px solid #535353;
 }
 .footerHome
 {
