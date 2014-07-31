@@ -195,7 +195,7 @@ ol, ul
 .banner input[type="submit"]
 {
 	height: 40px;
-	width: 113px;
+	width: 115px;
 	border: 1px solid #ff6000;
 	border-radius: 3px;
 	background: url("../images/bannerButtonGradient.jpg") repeat-x center;
@@ -264,7 +264,7 @@ ol, ul
 	font-size:12px;
 	line-height:16px;
 	text-align:right;
-	display: block;
+	float:right;
 }
 .content .content3 
 {
@@ -284,7 +284,7 @@ ol, ul
 	border-radius:3px;
 	background:url("../images/contentButtonGradient.jpg") repeat-x center;
 	height: 43px;
-	width: 145px;
+	width: 143px;
 	font: 22px/24px arial;
 	color: white;
 	margin-top:15px;
