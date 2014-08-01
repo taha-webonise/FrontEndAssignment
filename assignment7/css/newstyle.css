@@ -58,7 +58,7 @@ ol, ul
 .navigation
 {
 	float:left;
-	margin:25px 0 0 72px;
+	margin:25px 0 0 70px;
 }
 .navigation li
 {
@@ -140,7 +140,7 @@ ol, ul
 }
 .banner
 {
-	background-color:#0064a4;
+	background:#0064a4 url("../images/bannerGradient.jpg") repeat-x top;
 }
 .banner .container
 {
